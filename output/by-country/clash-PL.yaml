@@ -13,35 +13,7 @@ proxies:
   udp: true
 - name: 🇵🇱 PL 02 - xiaohe
   type: vless
-  server: 104.17.247.68
-  port: 443
-  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: khoda.ak-khoda.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: khoda.ak-khoda.workers.dev
-- name: 🇵🇱 PL 03 - xiaohe
-  type: vless
-  server: 94.183.157.174
-  port: 8090
-  uuid: 818eaf39-544f-4d1d-977e-87be7e33eecf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: askuhgfdsg.space.coupons
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: askuhgfdsg.space.coupons
-- name: 🇵🇱 PL 04 - xiaohe
-  type: vless
-  server: 94.183.157.223
+  server: 94.183.157.243
   port: 8090
   uuid: 818eaf39-544f-4d1d-977e-87be7e33eecf
   udp: true
@@ -60,8 +32,6 @@ proxy-groups:
   - AUTO
   - 🇵🇱 PL 01 - xiaohe
   - 🇵🇱 PL 02 - xiaohe
-  - 🇵🇱 PL 03 - xiaohe
-  - 🇵🇱 PL 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,7 +39,5 @@ proxy-groups:
   proxies:
   - 🇵🇱 PL 01 - xiaohe
   - 🇵🇱 PL 02 - xiaohe
-  - 🇵🇱 PL 03 - xiaohe
-  - 🇵🇱 PL 04 - xiaohe
 rules:
 - MATCH,PROXIES
