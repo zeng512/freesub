@@ -13,18 +13,18 @@ proxies:
   udp: true
 - name: 🇨🇿 CZ 02 - xiaohe
   type: vless
-  server: 195.133.24.39
-  port: 8443
-  uuid: 5aeb8159-7ecd-4051-89c3-82fb1cecff2e
+  server: cl-glb6e059ee.gcdn.co
+  port: 443
+  uuid: 6206cb76-491d-4237-baf1-8c29eea4eafb
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sub.777lfvpn.site
+  servername: node-3.wt419.site
   network: ws
   ws-opts:
-    path: /lfvpn-v28-vless
+    path: /qVnRkTxmLwBzHjYpFaDgUcSeNrKxMtVbWqZhPcLsJfGy
     headers:
-      Host: sub.777lfvpn.site
+      Host: node-3.wt419.site
 - name: 🇨🇿 CZ 03 - xiaohe
   type: vless
   server: cl-glb6e059ee.gcdn.co
