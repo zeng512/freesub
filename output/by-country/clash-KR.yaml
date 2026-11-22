@@ -44,12 +44,10 @@ proxies:
     headers:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
-  type: vmess
-  server: afzuv.xiaoyan.io
-  port: 16616
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
   udp: true
   tls: false
   skip-cert-verify: true
@@ -57,7 +55,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
   type: vless
   server: 152.69.226.63
@@ -86,17 +84,18 @@ proxies:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
   type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  server: 168.107.36.135
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /
+    path: /tyxyws
     headers:
-      Host: 152.69.226.63
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
